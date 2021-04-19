@@ -15,5 +15,6 @@ const CriptoController = require("./app/controller/CriptoController")
 
 routes.post("/:token/Criptomoeda", CriptoController.store)
 routes.get('/:token/Criptomoeda', CriptoController.index)
+routes.get("/:token/blockchainheigh", CriptoController.blockheigh)
 
 module.exports = routes
